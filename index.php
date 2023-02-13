@@ -20,6 +20,11 @@ if (isAuth()){
     }
 ?>
 
+<?php
+require($_SERVER['DOCUMENT_ROOT'].'/partials/twit.php');
+?>
+
+
 
 <?php
 require($_SERVER['DOCUMENT_ROOT'].'/partials/footer.php');
