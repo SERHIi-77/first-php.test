@@ -17,7 +17,7 @@ $('#formTwit').on('submit', function(e) {
         url: "/modules/add-twit.php",                       /* Метод запроса (post или get) */
         data: data,                                         /* Данные, которые будут переданы на сервер. */
         success: function(data){                            /* Функция, которая будет вызываться в случае успешного выполнения запроса. */
-            $('#ajaxStatus').html(data);
+            $('#listTwits').prepend(data);
         },
 
       });

@@ -41,4 +41,11 @@ function getUserID() {
     }
 }
 
+function getAllTwitsByUser($userID) {
+    global $conn;
+    $sql = "SELECT * FROM posts WHERE user_id=" . $userID . " ORDER BY id DESC";
+    $result = mysqli_query($conn, $sql);
+    return $result;
+}
+
 ?>
